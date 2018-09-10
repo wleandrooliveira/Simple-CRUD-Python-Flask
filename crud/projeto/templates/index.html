@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CRUD Flask | Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>Simple CRUD using Python with Flask framework and SQLite database</h1>
+  <p>Enjoy!</p>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6 col-sm-6">
+      <a href="{{ url_for('cadastrar') }}"><h3>CADASTRAR CLIENTES</h3></a>
+      <p>Use este link para adicionar novos clientes</p>
+    </div>
+    <div class="col-xs-6 col-sm-6">
+      <a href="{{ url_for('lista') }}"><h3>LISTAR CLIENTES</h3></a>
+      <p>Use este link para listar o(s) cliente(s)</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
